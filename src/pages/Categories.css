@@ -1,3 +1,43 @@
-/* Categories{
-    text-align: center;
-} */
+/* button {
+    width: 100%;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #2e344b;
+    border-radius: 15px;
+    display: flex;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid #234668;
+    cursor: pointer;
+  }
+  button:focus {
+    outline: none;
+  }
+
+  button:hover {
+    background-color: #555e7d;
+  } */
+
+div {
+    height: 300px;
+    width: 70%;
+}
+input{
+    font-size: 30px;
+    
+    color: #cc00c5;
+    background-color: transparent;
+    border: 2px solid #0099CC; 
+    border-spacing: 2px;
+border-radius: 13px;
+box-shadow: 0 2px #999;
+}
+label{
+    font-size: 30px;
+    
+    color: #cc00c5;
+}
+h2{
+    color: rgb(206, 96, 178);
+}
