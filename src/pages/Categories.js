@@ -28,7 +28,7 @@ function Categories() {
   return (
     <>
     <Input>Enter Player name</Input>
-    <h2>Select a Category</h2>
+    <h2>Select a Category:</h2>
     
       <div>
           <ul>
