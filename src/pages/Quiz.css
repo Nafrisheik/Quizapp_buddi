@@ -1,23 +1,36 @@
-.options-area {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
 
-  button{
-    font-size: 30px;
-    
+.question-count{
+    color: rgb(109, 148, 148);
+}
+.question-text{
+    color: rgb(149, 223, 223);
+}
+.options-area {
+    width: 80%;
+    display: flex;
+     flex-direction: column;
+    justify-content: space-between; 
+   }
+
+  .optionclass{
+    font-size: 20px;    
     color: #00becc;
     background-color: transparent;
-    border: 2px solid #0099CC; 
+    border: 2px solid #0099CC;  
     border-spacing: 2px;
 border-radius: 13px;
 box-shadow: 0 2px #999;
+} 
 
-}
-button:active {
+.optionclass:active {
     background-color: #ffffff;
     box-shadow: 0 9px #666;
     transform: translateY(4px);
+  } 
+  .score-area{
+      font-size: 70px;
+      color: rgb(194, 46, 152);
+
   }
+
+ 

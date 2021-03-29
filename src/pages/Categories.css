@@ -1,10 +1,10 @@
-/* button {
+button{
     width: 100%;
     font-size: 16px;
     color: #ffffff;
     background-color: #2e344b;
     border-radius: 15px;
-    display: flex;
+    /* display: flex; */
     padding: 5px;
     justify-content: flex-start;
     align-items: center;
@@ -19,10 +19,7 @@
     background-color: #555e7d;
   } */
 
-div {
-    height: 300px;
-    width: 70%;
-}
+
 input{
     font-size: 30px;
     
@@ -40,4 +37,5 @@ label{
 }
 h2{
     color: rgb(206, 96, 178);
+    font-size: large;
 }

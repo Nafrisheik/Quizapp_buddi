@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import './Quiz.css';
-import {Link} from 'react-router-dom'
 function Quiz() {
   const [CurrentCategory, setCurrent] = useState(
     localStorage.getItem('category')
@@ -39,7 +38,7 @@ function Quiz() {
 
 //function to check answer and initiate the next question and add the scores.
   function checkAnswer(answer) {
-    if (allQuestions[currentQuestion].correct_answer == answer) {
+    if (allQuestions[currentQuestion].correct_answer === answer) {
         setTimeout(() => {
             SetCurrentQuestion(currentQuestion + 1);
       setScore(score+1);
@@ -57,9 +56,8 @@ function Quiz() {
     <div>
       {displayScore ? (
         <div className="score-area">
-          You scored {score} out of {allQuestions.length}
+          {localStorage.getItem('player') ? localStorage.getItem('player'):"You"} scored {score} out of {allQuestions.length}
         </div>
-        // <Link to='/Score'></Link>
       ) : (
         <>
           <div className="question-area">
@@ -71,10 +69,11 @@ function Quiz() {
                 ? allQuestions[currentQuestion].question
                 : null}
             </div>
+
           </div>
           <div className="options-area">
             {allQuestions.length > 0 ? allQuestions[currentQuestion].allAnswers.map((option,index) => (
-              <button key={index} onClick={() => checkAnswer(option)}>{option}</button>
+              <button className="optionclass" key={index} onClick={() => checkAnswer(option)}>{option}</button>
             )):''}
           </div>
         </>

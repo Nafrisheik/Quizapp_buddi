@@ -36,7 +36,7 @@ function Categories() {
             <li>
               {Category.map((item, index) => (
                 <Link key={index} to="/Quiz">
-                  <Button
+                  <Button style={{width:"20%"}}
                     addCategory={addCategory}
                     id={item.id}
                     Category={item.name}
