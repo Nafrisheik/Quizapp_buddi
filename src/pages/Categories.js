@@ -1,17 +1,12 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 import './Categories.css';
-import {Link, BrowserRouter as Router} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Button from '../components/button';
 import Input from '../components/input';
 function Categories() {
   const [Category, setCategory] = useState([]);
-  const [gameCategory, setgameCategory] = useState();
-
-  const addCategory = (value) => {
-    setgameCategory(value);
-    console.log(gameCategory);
-  };
+  
 
   //this will generate all the Categories for the Quiz from the api
   useEffect(() => {
@@ -30,21 +25,20 @@ function Categories() {
     <Input>Enter Player name</Input>
     <h2>Select a Category:</h2>
     
-      <div>
-          <ul>
+      <div className="button-class">
+          {/* <ul>
             {' '}
-            <li>
+            <li> */}
               {Category.map((item, index) => (
                 <Link key={index} to="/Quiz">
                   <Button style={{width:"20%"}}
-                    addCategory={addCategory}
                     id={item.id}
                     Category={item.name}
                   ></Button>
                 </Link>
               ))}
-            </li>
-          </ul>
+            {/* </li>
+          </ul> */}
         </div>
     </>
   );

@@ -1,3 +1,10 @@
+/* .button-class{
+  display: flex;
+}
+.button-class > *{
+  flex:1 1 10em;
+
+} */
 button{
     width: 100%;
     font-size: 16px;
@@ -11,13 +18,15 @@ button{
     border: 5px solid #234668;
     cursor: pointer;
   }
+
+  
   button:focus {
     outline: none;
   }
 
   button:hover {
     background-color: #555e7d;
-  } */
+  } 
 
 
 input{

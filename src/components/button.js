@@ -3,7 +3,6 @@ import React from 'react'
 function Button(props) {
 
     function addValue(event){
-        props.addCategory(event.target.value);
         localStorage.setItem('category', event.target.value);       
 
     }
